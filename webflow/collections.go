@@ -29,18 +29,17 @@ type Collection struct {
 type Field struct {
 	Validations struct {
 		SingleLine    bool          `json:"singleLine,omitempty"`
-		maxLength     int           `json:"maxLength,omitempty"`
-		minLength     int           `json:"minLength,omitempty"`
-		minimum       int           `json:"minimum,omitempty"`
-		maximum       int           `json:"maximum,omitempty"`
-		maxSize       int           `json:"maxSize,omitempty"`
-		decimalPlaces int           `json:"decimalPlaces,omitempty"`
-		singleLine    bool          `json:"singleLine,omitempty"`
-		options       []interface{} `json:"options,omitempty"`
-		format        string        `json:"format,omitempty"`
-		precision     int           `json:"precision,omitempty"`
-		allowNegative bool          `json:"allowNegative,omitempty"`
-		collectionId  string        `json:"collectionId,omitempty"`
+		MaxLength     int           `json:"maxLength,omitempty"`
+		MinLength     int           `json:"minLength,omitempty"`
+		Minimum       int           `json:"minimum,omitempty"`
+		Maximum       int           `json:"maximum,omitempty"`
+		MaxSize       int           `json:"maxSize,omitempty"`
+		DecimalPlaces int           `json:"decimalPlaces,omitempty"`
+		Options       []interface{} `json:"options,omitempty"`
+		Format        string        `json:"format,omitempty"`
+		Precision     int           `json:"precision,omitempty"`
+		AllowNegative bool          `json:"allowNegative,omitempty"`
+		CollectionId  string        `json:"collectionId,omitempty"`
 	} `json:"validations"`
 	Id       string `json:"id"`
 	Editable bool   `json:"editable"`
