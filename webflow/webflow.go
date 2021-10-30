@@ -57,7 +57,6 @@ type Client struct {
 	Sites       *SitesService
 	Domains     *DomainsService
 	Collections *CollectionsService
-	Fields      *FieldsService
 	Items       *ItemsService
 	Images      *ImagesService
 	Ecommerce   *EcommerceService
@@ -100,7 +99,6 @@ func newClient(httpClient *http.Client) *Client {
 	c.Sites = (*SitesService)(&c.common)
 	c.Domains = (*DomainsService)(&c.common)
 	c.Collections = (*CollectionsService)(&c.common)
-	c.Fields = (*FieldsService)(&c.common)
 	c.Items = (*ItemsService)(&c.common)
 	c.Images = (*ImagesService)(&c.common)
 	c.Ecommerce = (*EcommerceService)(&c.common)

@@ -24,6 +24,31 @@ type Collection struct {
 	Fields       []interface{} `json:"fields"`
 }
 
+// Field models a Webflow API field
+// ref: https://developers.webflow.com/#fields
+type Field struct {
+	Validations struct {
+		SingleLine    bool          `json:"singleLine,omitempty"`
+		maxLength     int           `json:"maxLength,omitempty"`
+		minLength     int           `json:"minLength,omitempty"`
+		minimum       int           `json:"minimum,omitempty"`
+		maximum       int           `json:"maximum,omitempty"`
+		maxSize       int           `json:"maxSize,omitempty"`
+		decimalPlaces int           `json:"decimalPlaces,omitempty"`
+		singleLine    bool          `json:"singleLine,omitempty"`
+		options       []interface{} `json:"options,omitempty"`
+		format        string        `json:"format,omitempty"`
+		precision     int           `json:"precision,omitempty"`
+		allowNegative bool          `json:"allowNegative,omitempty"`
+		collectionId  string        `json:"collectionId,omitempty"`
+	} `json:"validations"`
+	Id       string `json:"id"`
+	Editable bool   `json:"editable"`
+	Required bool   `json:"required"`
+	Type     string `json:"type"`
+	Slug     string `json:"slug"`
+	Name     string `json:"name"`
+}
 type ListCollectionsOptions struct {
 	ListOptions
 }
