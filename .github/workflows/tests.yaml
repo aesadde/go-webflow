@@ -61,9 +61,8 @@ jobs:
       - name: Run go test
         run: go test -v -race -coverprofile coverage.txt -covermode atomic ./...
 
-      - name: Ensure integration tests build
-        # don't actually run tests since they hit live GitHub API
-        run: go test -v -tags=integration -run=^$ ./test/integration
+#      - name: Ensure integration tests build
+#        run: go test -v -tags=integration -run=^$ ./test/integration
 
       - name: Upload coverage to Codecov
         if: ${{ matrix.update-coverage }}
