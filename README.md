@@ -10,7 +10,7 @@ Inspired by [go-github](https://github.com/google/go-github).
 - [x] [Meta](https://developers.webflow.com/#meta)
 - [x] [Sites](https://developers.webflow.com/#sites)
 - [x] [Domains](https://developers.webflow.com/#domains)
-- [ ] [Collections](https://developers.webflow.com/#collections)
+- [x] [Collections](https://developers.webflow.com/#collections)
 - [ ] [Fields](https://developers.webflow.com/#fields)
 - [ ] [Items](https://developers.webflow.com/#items)
 - [ ] [Images](https://developers.webflow.com/#images)
@@ -63,4 +63,4 @@ A full list of examples can be found in the [examples](./examples) folder.
 If you have an issue: report it on the [issue tracker](https://github.com/aesadde/go-webflow/issues).
 
 ## Author
-Alberto Sadde (@aesadde).
+Alberto Sadde ([@aesadde](https://github.com/aesadde)).
