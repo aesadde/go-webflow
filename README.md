@@ -4,6 +4,9 @@ A Webflow API client enabling Go programs to interact with Webflow in a simple a
 
 Inspired by [go-github](https://github.com/google/go-github).
 
+[![Test Status](https://github.com/aesadde/go-webflow/workflows/tests/badge.svg)](https://github.com/aesadde/go-webflow/actions?query=workflow%3Atests)
+[![GoDoc](https://godoc.org/github.com/aesadde/go-webflow?status.svg)](https://godoc.org/github.com/aesadde/go-webflow)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aesadde/go-webflow)](https://goreportcard.com/report/github.com/aesadde/go-webflow)
 
 ## Supported APIs
 
@@ -18,7 +21,7 @@ Inspired by [go-github](https://github.com/google/go-github).
 ## Usage
 
 ```go
-import "github.com/aesadde/go-webflow"
+import "github.com/aesadde/go-webflow/webflow"
 ```
 
 Then construct a new client providing your [Webflow API Key](https://developers.webflow.com/#authentication) and use

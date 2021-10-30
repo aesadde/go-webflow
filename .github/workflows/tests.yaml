@@ -64,6 +64,6 @@ jobs:
 #      - name: Ensure integration tests build
 #        run: go test -v -tags=integration -run=^$ ./test/integration
 
-      - name: Upload coverage to Codecov
-        if: ${{ matrix.update-coverage }}
-        uses: codecov/codecov-action@f32b3a3741e1053eb607407145bc9619351dc93b #v2.1.0
+#      - name: Upload coverage to Codecov
+#        if: ${{ matrix.update-coverage }}
+#        uses: codecov/codecov-action@f32b3a3741e1053eb607407145bc9619351dc93b #v2.1.0
