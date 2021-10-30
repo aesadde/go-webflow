@@ -11,8 +11,7 @@ Inspired by [go-github](https://github.com/google/go-github).
 - [x] [Sites](https://developers.webflow.com/#sites)
 - [x] [Domains](https://developers.webflow.com/#domains)
 - [x] [Collections](https://developers.webflow.com/#collections)
-- [ ] [Items](https://developers.webflow.com/#items)
-- [ ] [Images](https://developers.webflow.com/#images)
+- [x] [Items](https://developers.webflow.com/#items)
 - [ ] [Ecommerce](https://developers.webflow.com/#ecommerce)
 - [ ] [Webhooks](https://developers.webflow.com/#webhooks)
 

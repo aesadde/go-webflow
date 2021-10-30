@@ -58,7 +58,6 @@ type Client struct {
 	Domains     *DomainsService
 	Collections *CollectionsService
 	Items       *ItemsService
-	Images      *ImagesService
 	Ecommerce   *EcommerceService
 	Webhooks    *WebhooksService
 }
@@ -100,7 +99,6 @@ func newClient(httpClient *http.Client) *Client {
 	c.Domains = (*DomainsService)(&c.common)
 	c.Collections = (*CollectionsService)(&c.common)
 	c.Items = (*ItemsService)(&c.common)
-	c.Images = (*ImagesService)(&c.common)
 	c.Ecommerce = (*EcommerceService)(&c.common)
 	c.Webhooks = (*WebhooksService)(&c.common)
 
@@ -428,4 +426,12 @@ func addOptions(s string, opts interface{}) (string, error) {
 
 	u.RawQuery = qs.Encode()
 	return u.String(), nil
+}
+
+//PageInfo holds the pagination information for a Webflow API request
+type PageInfo struct {
+	Count  int `json:"count,omitempty"`
+	Limit  int `json:"limit,omitempty"`
+	Offset int `json:"offset,omitempty"`
+	Total  int `json:"total,omitempty"`
 }
